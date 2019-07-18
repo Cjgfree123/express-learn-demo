@@ -6,9 +6,17 @@ express  原理
 2.router.js有问题
 
 ## 思路
+
+文件1.get.js
 1. 基础实现express服务
 2. 从express.js,抽离出applications.js
 3. 实现router和应用的分离
+
+文件2.router.js
+1. next函数，链式调用
+
+文件3.route.js
+1. 将路径相同的接口，进行整合
 
 ## 小收获
 
@@ -50,4 +58,11 @@ Router
 Layer
 Router Layer 路径，处理函数(router.dispatch) 特殊属性:route
 Route layer 路径,处理函数(真正的业务代码) 特殊属性:method
+
 ```
+
+4. 如果任何一步出错了，会把错误交给next. 然后会跳过后面所有的正常处理函数，交给错误中间件进行处理。
+
+什么是错误处理中间件？
+
+回答: 
