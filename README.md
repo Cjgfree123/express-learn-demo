@@ -1,6 +1,10 @@
 # express-learn-demo
 express  原理
 
+## 课时说明
+
+2.router.js有问题
+
 ## 思路
 1. 基础实现express服务
 2. 从express.js,抽离出applications.js
