@@ -4,7 +4,9 @@ const app = express();
 /**
  * 嵌套路由注意:
  * 1. express.Router(), 返回路由实例
- * 2. 
+ * 2. get是指定多个处理函数
+ * 3. 子路由系统，单独创建一个子路由系统，并且将它挂载到: 主路由系统上
+ * 
  */
 
 /**
@@ -26,6 +28,7 @@ app.get("/", function(req, res, next){
 
 // 创建一个新的路由系统
 const user = express.Router();
+const article = express.Router();
 
 app.use("/user", user);
 
@@ -43,4 +46,12 @@ user.use("/2",function(req,res,next){
 app.use(function(err, req, res, next){
   res.end("catch " + err);
 })
+
+app.use("/user", article);
+
+user.use("/2",function(req,res,next){
+  console.log("ware3")
+  res.end(2);
+});
+
 app.listen(3004);

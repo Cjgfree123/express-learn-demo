@@ -1,6 +1,22 @@
 # express-learn-demo
 express  原理
 
+## 
+
+```
+function Router(){
+    let obj = {name: "cc"};
+    return obj;
+} 
+
+let r1 = Router();
+let r2 = new Router();
+r1 === r2 // true ({name: "cc"})
+
+```
+
+结论: 如果构造函数，返回一个对象。就有: new 构造函数 === 构造函数()
+
 ## 课时说明
 
 2.router.js有问题
@@ -17,6 +33,9 @@ express  原理
 
 文件3.route.js
 1. 将路径相同的接口，进行整合
+
+文件4.use.js
+1. 实现嵌套路由
 
 ## 小收获
 
