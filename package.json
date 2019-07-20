@@ -8,6 +8,7 @@
     "test": "test"
   },
   "dependencies": {
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
     "nodemon": "^1.19.1",
     "path-to-regexp": "^3.0.0",
@@ -15,8 +16,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "service": "nodemon test/5.param.js",
-    "dev": "pm2 start test/5.param.js --watch"
+    "service": "nodemon test/6.template.js",
+    "dev": "pm2 start test/6.template.js --watch"
   },
   "repository": {
     "type": "git",

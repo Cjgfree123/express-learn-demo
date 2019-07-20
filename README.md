@@ -21,7 +21,7 @@ r1 === r2 // true ({name: "cc"})
 
 2.router.js有问题
 
-## 思路
+## 测试文件
 
 文件1.get.js
 1. 基础实现express服务
@@ -39,6 +39,16 @@ r1 === r2 // true ({name: "cc"})
 
 文件5.param.js
 1. 实现动态路由参数匹配
+
+文件1.tmpl.js
+1. 测试ejs封装，仅支持简单语法。 如
+
+```
+<%=name%>
+```
+
+文件2.tmpl.js
+1. 支持if else等逻辑
 
 ## 小收获
 
