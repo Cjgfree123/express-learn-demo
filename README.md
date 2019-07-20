@@ -37,6 +37,9 @@ r1 === r2 // true ({name: "cc"})
 文件4.use.js
 1. 实现嵌套路由
 
+文件5.param.js
+1. 实现动态路由参数匹配
+
 ## 小收获
 
 1.注意: res.end,并非res.send。res.send会报错
