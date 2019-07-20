@@ -1,0 +1,31 @@
+{
+  "name": "express-learn-demo",
+  "version": "1.0.0",
+  "description": "express  原理",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "pm2": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "service": "nodemon test/4.use.js",
+    "dev": "pm2 start test/4.use.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cjgfree123/express-learn-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cjgfree123/express-learn-demo/issues"
+  },
+  "homepage": "https://github.com/Cjgfree123/express-learn-demo#readme"
+}
