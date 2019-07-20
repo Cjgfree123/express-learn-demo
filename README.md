@@ -1,25 +1,6 @@
-# express-learn-demo
+# express-learn-demo 
 express  原理
 
-## 
-
-```
-function Router(){
-    let obj = {name: "cc"};
-    return obj;
-} 
-
-let r1 = Router();
-let r2 = new Router();
-r1 === r2 // true ({name: "cc"})
-
-```
-
-结论: 如果构造函数，返回一个对象。就有: new 构造函数 === 构造函数()
-
-## 课时说明
-
-2.router.js有问题
 
 ## 测试文件
 
@@ -49,6 +30,9 @@ r1 === r2 // true ({name: "cc"})
 
 文件2.tmpl.js
 1. 支持if else等逻辑
+
+文件3.with.js
+1. 展示new Function基础渲染原理
 
 ## 小收获
 
@@ -98,3 +82,9 @@ Route layer 路径,处理函数(真正的业务代码) 特殊属性:method
 什么是错误处理中间件？
 
 回答: 
+
+5. 报错:Unterminated template literal (在学习模板引擎原理，拼接html时，遇到该错误)
+
+解释: 没有闭合的html标签。
+
+检查: html处，引号拼接。
